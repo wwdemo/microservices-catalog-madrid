@@ -1,0 +1,10 @@
+---
+applications:
+- services:
+  - myMicroservicesCloudant
+  name: MicroservicesCatalogAPI
+  buildpack: sdk-for-nodejs
+  memory: 96m
+  instances: 1
+  path: .
+
