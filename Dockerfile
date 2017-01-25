@@ -25,7 +25,7 @@ COPY package.json /app/package.json
 RUN npm install  
 COPY ./ /app/
 # ENV WEB_PORT 80
-# EXPOSE  80
+EXPOSE  80
 
 ## script_to_launch_sidecar_and_app
 ENTRYPOINT ["a8sidecar", "--register", "--proxy", "node", "/app/app.js"]
