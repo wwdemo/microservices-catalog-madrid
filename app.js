@@ -19,13 +19,7 @@ app.use(express.static(path.join(__dirname, 'www')));
 
 //REST HTTP Methods
 app.get('/items', items.list);
-//app.get('/db/:option', items.dbOptions);
-//app.get('/fib', items.fib);
-//app.get('/loadTest', items.loadTest);
-//app.get('/items/:id', items.find);
-//app.post('/items', items.create);
-//app.put('/items/:id', items.update);
-//app.delete('/items/:id', items.remove);
 
-app.listen(appEnv.port, appEnv.bind);
-console.log('App started on ' + appEnv.bind + ':' + appEnv.port);
+
+app.listen(80, appEnv.bind);
+console.log('App started on ' + appEnv.bind + ':' + 80);
